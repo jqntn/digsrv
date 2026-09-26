@@ -1,4 +1,4 @@
-# gleamsrv
+# digsrv
 
 A hello world HTTP server on port 4000.
 
