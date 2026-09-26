@@ -1,0 +1,5 @@
+services:
+  gleamsrv:
+    build: .
+    ports:
+      - "4000:4000"
