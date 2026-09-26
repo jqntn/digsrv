@@ -1,5 +1,6 @@
 services:
   gleamsrv:
+    image: ghcr.io/jqntn/gleamsrv:latest
     build: .
     ports:
       - "4000:4000"
