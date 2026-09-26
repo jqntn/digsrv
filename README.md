@@ -10,6 +10,5 @@ curl localhost:4000
 To run it without Docker, install Erlang, Gleam, and rebar3:
 
 ```sh
-gleam test
-gleam run
+./run.sh
 ```
