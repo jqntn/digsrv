@@ -1,4 +1,4 @@
-import gleamy
+import gleamsrv
 import gleeunit
 
 pub fn main() -> Nil {
@@ -6,5 +6,5 @@ pub fn main() -> Nil {
 }
 
 pub fn greet_test() -> Nil {
-  assert gleamy.greet("Joe") == "Hello, Joe!"
+  assert gleamsrv.greet("Joe") == "Hello, Joe!"
 }

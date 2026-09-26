@@ -1,4 +1,4 @@
-# gleamy
+# gleamsrv
 
 ```sh
 gleam test

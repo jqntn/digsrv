@@ -1,4 +1,4 @@
-name = "gleamy"
+name = "gleamsrv"
 version = "1.0.0"
 gleam = ">= 1.18.1"
 
