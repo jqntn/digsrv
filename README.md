@@ -1,7 +1,8 @@
 # digsrv
 
 ```sh
-./run.sh  # needs Erlang, Gleam, and rebar3 installed
+npm install  # installs the git hooks
+./run.sh     # needs Erlang, Gleam, and rebar3 installed
 ```
 
 ## Docker

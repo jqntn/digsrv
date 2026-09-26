@@ -1,0 +1,22 @@
+min_version: 2.1.12
+
+pre-commit:
+  parallel: false
+  jobs:
+    - name: format
+      glob: "*.gleam"
+      run: gleam format {staged_files}
+      stage_fixed: true
+    - name: build
+      glob: "*.{gleam,toml}"
+      run: gleam build --warnings-as-errors
+
+commit-msg:
+  jobs:
+    - name: conventional
+      run: >-
+        head -n 1 "{1}" | grep -qE '^(build|chore|ci|docs|feat|fix|perf|refactor|revert|style|test)(\([a-z0-9._/-]+\))?!?: [a-z][^A-Z]*[^.]$'
+    - name: subject-length
+      run: awk 'NR == 1 { exit length($0) > 72 }' "{1}"
+    - name: subject-only
+      run: awk '/^# -+ >8 -+$/ { exit } /^#/ || /^[[:space:]]*$/ { next } { n++ } END { exit n != 1 }' "{1}"
