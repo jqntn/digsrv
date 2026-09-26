@@ -1,6 +1,6 @@
+import digsrv
 import gleam/bytes_tree
 import gleam/http/request
-import digsrv
 import gleeunit
 import mist
 
